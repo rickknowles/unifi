@@ -29,5 +29,5 @@ jobs:
         with:
           push: true
           tags: |
-            ${{ secrets.DOCKER_REGISTRY }}/library/${{ env.REPO_NAME }}:${{ github.sha }}
-            ${{ secrets.DOCKER_REGISTRY }}/library/${{ env.REPO_NAME }}:latest
+            ${{ env.REPO_NAME }}:${{ github.sha }}
+            ${{ env.REPO_NAME }}:latest
